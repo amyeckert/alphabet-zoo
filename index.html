@@ -13,40 +13,33 @@
 		<section class='animals'>
 			<h1 class="animalName">Tap any key!</h1>
 
-			<div class='animal' data-key=''>
+			<!-- <div class='animal' data-key=''>
   				<span class="played"></span>		
-			</div>
+			</div> -->
 
 			<audio data-key="65" src="files/goat.wav"></audio>
 		  	<audio data-key="66" src="files/elephant.wav"></audio>
+		  	<!-- <audio data-key="66" src="files/elephant.wav"></audio>
+		  	<audio data-key="66" src="files/elephant.wav"></audio>
+		  	<audio data-key="66" src="files/elephant.wav"></audio>
+		  	<audio data-key="66" src="files/elephant.wav"></audio> -->
 			
-
 		</section>
 		<script>
-			function removeBackgroundImage(e) {
-				if e.propertyName !== 'background-image' return;
-				e.target.classList.remove('background-image');
+			function playSound(e) {
+			  // look for the audio element where data-key attribute is defined
+			  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
+			  if(!audio) return; //stops the function if no audio data-key corresponding to the keyCode number
+			  
+			  // key.classList.add('${e.keyCode}); //adds class, in jQuery same as key.addClass('playing')
+			  
+			  audio.currentTime = 0; //rewinds to the start of the sound file. 
+			  audio.play(); //play() is a built in function that works wiht audio and video DOM elements
+			  console.log(audio.keyCode);
 			}
-			const body = document.getElementById("body");
-			//remove any previously added keyCode/ background image:
-			// body.removeClass("${e.keyCode}");
-			
-			window.addEventListener('keydown', function(e) {
-
-				//get keyCode 
-				const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-
-				//if a key is not assigned to a sound:
-				if(!audio) return;
-				// reset to beginning of sound on each keydown:
-				audio.currentTime = 0;
-				//play the sound:
-				audio.play();
-				//add keyCode as a class to change background image.
-				// body.addClass("${e.keyCode}");
-				body.addEventListener('changed', removeBackgroundImage)
-				console.log(e.keyCode);
-			});
+			window.addEventListener('keydown', playSound);
+		
 
 		</script>
 	</body>
