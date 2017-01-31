@@ -1,30 +1,49 @@
-.body {
+body {
 	width: 100%;
-	margin: 50px auto;
-	background-color: #c5dbe0;
+	background-color: none;
 	background-size: cover;
-		background-image: url('../img/elephant.jpg');
-
-
 }
 h1 {
 	font-size: 10rem;
-	color: #ffffff;
+	color: red;
 }
 .animals {
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	height:100vh;
 	display: flex;
 	flex-direction: column;
 	flex: 1;
 	justify-content: center;
+	align-items: center;	
 
 }
-.65 {
-	background-image: url('../img/goat.jpg');
-	background-size: cover;
-}
-.66 {
-	background-image: url('../img/elephant.jpg');
-	background-size: cover;
-}
+/*ALPHABET*/
+.bg65 {background-image: url('../img/axolotl.jpg');}
+.bg66 {background-image: url('../img/baboon.jpg');}
+.bg67 {background-image: url('../img/coyote.png');}
+.bg68 {background-image: url('../img/donkey.jpg');}
+.bg69 {background-image: url('../img/elephant.jpg');}
+
+.bg70 {background-image: url('../img/falcon.jpg');}
+.bg71 {background-image: url('../img/goat.jpg');}
+.bg72 {background-image: url('../img/elephant.jpg');}
+.bg73 {background-image: url('../img/axolotl.jpg');}
+.bg74 {background-image: url('../img/axolotl.jpg');}
+.bg75 {background-image: url('../img/kookaburra.jpg');}
+.bg76 {background-image: url('../img/goat.jpg');}
+.bg77 {background-image: url('../img/axolotl.jpg');}
+.bg78 {background-image: url('../img/axolotl.jpg');}
+.bg79 {background-image: url('../img/elephant.jpg');}
+.bg80 {background-image: url('../img/goat.jpg');}
+.bg81 {background-image: url('../img/axolotl.jpg');}
+.bg82 {background-image: url('../img/axolotl.jpg');}
+.bg83 {background-image: url('../img/elephant.jpg');}
+.bg84 {background-image: url('../img/goat.jpg');}
+.bg85 {background-image: url('../img/axolotl.jpg');}
+.bg86 {background-image: url('../img/axolotl.jpg');}
+.bg87 {background-image: url('../img/elephant.jpg');}
+.bg88 {background-image: url('../img/goat.jpg');}
+.bg89 {background-image: url('../img/axolotl.jpg');}
+.bg90 {background-image: url('../img/axolotl.jpg');}
+
