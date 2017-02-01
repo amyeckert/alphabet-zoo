@@ -6,11 +6,11 @@
 		<title>Animal Alphabet</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<!-- <script src="js/zoo.js"></script> -->
 	</head>
+
 	<body class="">
 		<section class='animals'>
+
 			<h1 class="animalName">Start typing!</h1>
 
 		  	<audio data-key="65" src="files/bubbles.wav"></audio> <!-- A -->
@@ -18,9 +18,9 @@
 		  	<audio data-key="67" src="files/coyotehowl.wav"></audio> <!-- C -->
 		  	<audio data-key="68" src="files/donkey.wav"></audio> <!-- D -->
 		  	<audio data-key="69" src="files/elephant.wav"></audio> <!-- E -->
-
 			<audio data-key="70" src="files/goat.wav"></audio> <!-- F -->
 		  	<audio data-key="71" src="files/goat.wav"></audio> <!-- G -->
+		  	<!-- below need wav files  -->
 		 	<audio data-key="72" src="files/bubbles.wav"></audio> <!-- H -->
 		  	<audio data-key="73" src="files/elephant.wav"></audio> <!-- I -->
 		  	<audio data-key="74" src="files/coyotehowl.wav"></audio> <!-- J -->
@@ -39,38 +39,10 @@
 		  	<audio data-key="87" src="files/elephant.wav"></audio> <!-- W -->
 		  	<audio data-key="88" src="files/coyotehowl.wav"></audio> <!-- X -->
 		  	<audio data-key="89" src="files/donkey.wav"></audio> <!-- Y -->
-		  	<audio data-key="90" src="files/elephant.wav"></audio> <!-- Z -->
-			
-			
+		  	<audio data-key="90" src="files/elephant.wav"></audio> <!-- Z -->	
 		</section>
-		<script>
-		function playSoundAndChangeImage(e) {
-		  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-		  const image = document.querySelector('body');
-		  //create array of animal names to display in h1
 
-		  // const animalNames = [
-		  // 	[65, 'Axlotl'],
-		  // 	[66, ''], 
-		  // 	];
-
-
-		  if(!audio) return; //stops the function if no audio data-key defined.
-		  audio.currentTime = 0; //rewinds to the start of the sound file. 
-		  audio.play(); //play() is a built in function that works wiht audio and video DOM elements
-		  //add keyCode as class name to change bg image.
-		  if(e.keyCode == `${e.keyCode}`) {
-		  	var body = document.querySelector('body');
-		  	body.classList = "";
-		  	var newImage = `${e.keyCode}`;
-		  	body.classList.add('bg' + newImage);
-		  	// console.log(audio, newImage);
-		  }
-
-
-		}
-		window.addEventListener('keydown', playSoundAndChangeImage);
-		
-		</script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+		<script src="js/zoo.js"></script>
 	</body>
 </html>
