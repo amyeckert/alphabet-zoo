@@ -1,36 +1,42 @@
 // create array of animal names to display in the h1
-const animalNames = ['Axlotl', 'Baboon', 'Coyote', 'Donkey', 'Elephant', 'Falcon', 'Goat'
-  // [66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],
+// const animalNames = ['Axlotl', 'Baboon', 'Coyote', 'Donkey', 'Elephant', 'Falcon', 'Goat'
+//   // [66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],[66, 'Baboon'],
+//   ];
+
+const animals = [
+  {name: 'Axlotl', animalId: 65}, 
+  {name: 'Baboon', animalId: 66}, 
+  {name: 'Coyote', animalId: 67}
   ];
 
-  var animals = [
-    {
-    newImage: 'bg65',
-    animal: 'Axlotl',
-    sound: 
-  }, {
-     newImage: 'bg90',
-      animal: 'Coyote'
-  }];
 
-  const sound = document.querySelector(`audio[src]`); //can I do this? 
+// function getAnimalId(animal) {
+//   var id = 0;
+//   return animal.animalId === id; 
+// }
+// console.log(animals.find(getAnimalId));
 
-// on keydown, play sound and change image, and text?
+
+// on keydown, play sound and change image and text
 function playSoundAndChangeImage(e) {
-  console.log(animalNames);
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
-  if(!audio) return; //stops the function if no audio data-key defined.
-  audio.currentTime = 0; //rewinds to the start of the sound file. 
-  audio.play(); //play() is a built in function that works wiht audio and video DOM elements
+  const keyCode = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
+  if(!keyCode) return; //stops the function if no audio data-key defined.
+  keyCode.currentTime = 0; //rewinds to the start of the sound file. 
+  keyCode.play(); //play() is a built in function that works wiht audio and video DOM elements
+
   //add keyCode as class name to change bg image.
   if(e.keyCode == `${e.keyCode}`) {
-    var body = document.querySelector('body');
+    const body = document.querySelector('body');
     body.classList = "";
-    var newImage = `${e.keyCode}`;
-    body.classList.add('bg' + newImage);
+    const id = `${e.keyCode}`;
+    body.classList.add('bg' + id);
     // console.log(audio, newImage);
   }
+const whichAnimal = animals.filter(animal => (animals.name === 'Baboon'));
+console.table(animals, whichAnimal);
+
 }
 
 window.addEventListener('keydown', playSoundAndChangeImage);
