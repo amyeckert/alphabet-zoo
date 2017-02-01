@@ -1,6 +1,7 @@
 body {
 	width: 100%;
-	background-color: none;
+	background-color: black;
+
 	background-size: cover;
 }
 h1 {
