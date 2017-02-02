@@ -30,16 +30,11 @@ function playSoundAndChangeImage(e) {
     body.classList.add('bg' + id);
 
     //find  animal in animals array that has that id and print the name in the h1
-    const animalId = animals.map(animal => `${animal.animalId}`);
-    const animalName = animals.map(animal => `${animal.name}`);
+    var whichAnimal = animals.filter(animal => `${animal.animalId}` === id);
+    var displayName = whichAnimal.find(animal => `${animal.name}`);
 
-    const whichAnimal = animals.filter(animal => `${animal.animalId}` === id);
-
-
-    var displayName = document.querySelector('h1');
-    displayName.innerHTML = 'name of animal';
-
-    console.log(whichAnimal);
+    var text = document.querySelector('h1');
+    text.innerHTML = displayName.name;
   }
 }
 
