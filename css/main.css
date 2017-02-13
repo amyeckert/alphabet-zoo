@@ -19,6 +19,8 @@ h1 {
 	align-items: center;	
 
 }
+//text transformations and transitions
+
 /*ALPHABET*/
 .bg65 {background-image: url('../img/axolotl.jpg');}
 .bg66 {background-image: url('../img/baboon.jpg');}
@@ -32,7 +34,7 @@ h1 {
 .bg74 {background-image: url('../img/jaguar.jpg');}    
 .bg75 {background-image: url('../img/kookaburra.jpg');}
 .bg76 {background-image: url('../img/lion.jpg');}
-.bg77 {background-image: url('../img/moose.jpg');}
+.bg77 {background-image: url('../img/markhor.jpg');}
 .bg78 {background-image: url('../img/nightingale1.jpg');}
 .bg79 {background-image: url('../img/otter1.jpg');}
 

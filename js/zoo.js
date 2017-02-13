@@ -12,10 +12,10 @@ const animals = [
   {name: 'jaguar', animalId: 74},
   {name: 'kookaburra', animalId: 75},
   {name: 'lion', animalId: 76},
-  {name: 'moose', animalId: 77},
+  {name: 'markhor', animalId: 77},
   {name: 'nightingale', animalId: 78},
-
   {name: 'otter', animalId: 79},
+
   {name: 'Coyote', animalId: 80},
   {name: 'Coyote', animalId: 81},
   {name: 'Coyote', animalId: 82},
@@ -58,5 +58,13 @@ function playSoundAndChangeImage(e) {
   }
 }
 
+// I want the sound to stop playing on "keyup" event
+function stopSound(e) {
+}
+// I want the image to fade in/out quickly, so the screen is not blank for a split second. 
+
+//text transformations and transitions
+
 window.addEventListener('keydown', playSoundAndChangeImage);
+// window.addEventListener('keyup', stopSound);
 
