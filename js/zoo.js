@@ -18,15 +18,14 @@ const animals = [
   {name: 'pig', animalId: 80},
   {name: 'quetzal', animalId: 81},
   {name: 'raven', animalId: 82},
-  {name: 'sperm whale', animalId: 83},
-
-  {name: 'Coyote', animalId: 84},
-  {name: 'Coyote', animalId: 85},
-  {name: 'Coyote', animalId: 86},
-  {name: 'Coyote', animalId: 87},
-  {name: 'Coyote', animalId: 88},
-  {name: 'Coyote', animalId: 89},
-  {name: 'Coyote', animalId: 90},
+  {name: 'saiga', animalId: 83},
+  {name: 'tamarin', animalId: 84},
+  {name: 'uromastix', animalId: 85},
+  {name: 'vampire bat', animalId: 86},
+  {name: 'wasp', animalId: 87},
+  {name: 'xentarosaurus', animalId: 88},
+  {name: 'yak', animalId: 89},
+  {name: 'zebra', animalId: 90},
   ];
 
 
