@@ -57,8 +57,9 @@ function playSoundAndChangeImage(e) {
   }
 }
 
-// I want the sound to stop playing on "keyup" event
+// I want the sound to stop playing on "keyup" event add event listener
 function stopSound(e) {
+  keyCode.currentTime = 0; 
 }
 // I want the image to fade in/out quickly, so the screen is not blank for a split second. 
 
